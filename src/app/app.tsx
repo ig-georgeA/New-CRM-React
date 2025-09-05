@@ -1,4 +1,4 @@
-import { IgrIconButton, IgrNavbar, IgrNavDrawer, IgrNavDrawerItem, IgrRipple } from 'igniteui-react';
+import { IgrIconButton, IgrNavbar, IgrNavDrawer, IgrNavDrawerItem, IgrRipple } from '@infragistics/igniteui-react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import styles from './app.module.css';
@@ -13,43 +13,49 @@ export default function App() {
   return (
     <>
       <div className={classes("column-layout master-view-container")}>
-        <div className={classes("row-layout group")}>
-          <div onClick={() => navDrawer?.current?.toggle()} className={classes("row-layout group_1")}>
-            <span className={classes("material-icons icon")}>
-              <span>menu</span>
-            </span>
+        <IgrNavbar className={classes("navbar")}>
+          <div style={{ display: 'contents' }} slot="start" onClick={() => navDrawer?.current?.toggle()}>
+            <IgrIconButton variant="flat" className={classes("icon-button")}>
+              <span className={classes("material-icons icon")}>
+                <span>menu</span>
+              </span>
+              <IgrRipple></IgrRipple>
+            </IgrIconButton>
           </div>
-          <IgrNavbar className={classes("navbar")}>
-            <div className={classes("row-layout group_2")}>
-              <img src="/src/assets/CRM%20Logo.svg" className={classes("image")} />
-            </div>
-            <div style={{ display: 'contents' }} slot="end">
-              <IgrIconButton variant="flat" className={classes("icon-button")}>
-                <span className={classes("material-icons icon_1")}>
-                  <span>search</span>
-                </span>
-                <IgrRipple></IgrRipple>
-              </IgrIconButton>
-            </div>
-            <div style={{ display: 'contents' }} slot="end">
-              <IgrIconButton variant="flat" className={classes("icon-button")}>
-                <span className={classes("material-icons icon_1")}>
-                  <span>settings</span>
-                </span>
-                <IgrRipple></IgrRipple>
-              </IgrIconButton>
-            </div>
-            <div style={{ display: 'contents' }} slot="end">
-              <IgrIconButton variant="flat" className={classes("icon-button")}>
-                <span className={classes("material-icons icon_1")}>
-                  <span>notifications_none</span>
-                </span>
-                <IgrRipple></IgrRipple>
-              </IgrIconButton>
-            </div>
-          </IgrNavbar>
-        </div>
-        <div className={classes("row-layout group_3")}>
+          <div className={classes("row-layout group")}>
+            <p className={classes("typography__subtitle-2 text")}>
+              <span>MyCRM</span>
+            </p>
+            <p className={classes("typography__body-2 text")}>
+              <span>|  CUSTOMER RELATIONSHIP MANAGEMENT</span>
+            </p>
+          </div>
+          <div style={{ display: 'contents' }} slot="end">
+            <IgrIconButton variant="flat" className={classes("icon-button_1")}>
+              <span className={classes("material-icons icon_1")}>
+                <span>search</span>
+              </span>
+              <IgrRipple></IgrRipple>
+            </IgrIconButton>
+          </div>
+          <div style={{ display: 'contents' }} slot="end">
+            <IgrIconButton variant="flat" className={classes("icon-button_2")}>
+              <span className={classes("material-icons icon_1")}>
+                <span>settings</span>
+              </span>
+              <IgrRipple></IgrRipple>
+            </IgrIconButton>
+          </div>
+          <div style={{ display: 'contents' }} slot="end">
+            <IgrIconButton variant="flat" className={classes("icon-button_3")}>
+              <span className={classes("material-icons icon_1")}>
+                <span>notifications_none</span>
+              </span>
+              <IgrRipple></IgrRipple>
+            </IgrIconButton>
+          </div>
+        </IgrNavbar>
+        <div className={classes("row-layout group_1")}>
           <IgrNavDrawer open={true} position="relative" ref={navDrawer} className={classes("nav-drawer")}>
             <div style={{ display: 'contents' }} onClick={() => navigate(`/home`)}>
               <IgrNavDrawerItem>

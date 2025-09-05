@@ -1,12 +1,12 @@
-import { IgrActionStrip, IgrCellTemplateContext, IgrColumn, IgrColumnGroup, IgrGrid, IgrGridEditDoneEventArgs, IgrGridEditingActions, IgrGridPinningActions, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarAdvancedFiltering, IgrGridToolbarTitle, IgrPaginator, IgrRowDataEventArgs } from 'igniteui-react-grids';
-import { IgrButton, IgrChip, IgrDialog, IgrInput, IgrRipple, IgrSelect, IgrSelectItem, IgrSnackbar } from 'igniteui-react';
+import { IgrActionStrip, IgrCellTemplateContext, IgrColumn, IgrColumnGroup, IgrGrid, IgrGridEditDoneEventArgs, IgrGridEditingActions, IgrGridPinningActions, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarAdvancedFiltering, IgrGridToolbarTitle, IgrPaginator, IgrRowDataEventArgs } from '@infragistics/igniteui-react-grids';
+import { IgrButton, IgrChip, IgrDialog, IgrInput, IgrRipple, IgrSelect, IgrSelectItem, IgrSnackbar } from '@infragistics/igniteui-react';
 import { useNavigate } from 'react-router-dom';
 import { useRef, useState } from 'react';
 import { CustomerDto } from '../models/NorthwindSwagger/customer-dto';
 import { deleteCustomerDto, postCustomerDto, putCustomerDto } from '../services/northwind-swagger';
 import { formDataToObject } from '../utils/form-utils';
 import { useGetCustomerDtoPagedResultDto } from '../hooks/northwind-swagger-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './customers.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

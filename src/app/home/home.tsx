@@ -1,5 +1,5 @@
-import { IgrAvatar, IgrButton, IgrCard, IgrCardContent, IgrCardHeader, IgrChip, IgrList, IgrListItem, IgrRipple } from 'igniteui-react';
-import { IgrCategoryChart, IgrCategoryChartModule } from 'igniteui-react-charts';
+import { IgrAvatar, IgrButton, IgrCard, IgrCardContent, IgrCardHeader, IgrChip, IgrList, IgrListItem, IgrRipple } from '@infragistics/igniteui-react';
+import { IgrCategoryChart, IgrCategoryChartModule } from '@infragistics/igniteui-react-charts';
 import { useNavigate } from 'react-router-dom';
 import { useGetCustomerDtoList } from '../hooks/northwind-swagger-hooks';
 import { useGetMeetingsTasksList } from '../hooks/crmapp-hooks';

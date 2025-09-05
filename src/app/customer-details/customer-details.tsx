@@ -1,10 +1,10 @@
-import { IgrAccordion, IgrAvatar, IgrButton, IgrCheckbox, IgrChip, IgrExpansionPanel, IgrList, IgrListItem, IgrRipple, IgrTab, IgrTabs } from 'igniteui-react';
-import { IgrColumn, IgrGrid, IgrGridToolbar, IgrGridToolbarTitle } from 'igniteui-react-grids';
+import { IgrAccordion, IgrAvatar, IgrButton, IgrCheckbox, IgrChip, IgrExpansionPanel, IgrList, IgrListItem, IgrRipple, IgrTab, IgrTabs } from '@infragistics/igniteui-react';
+import { IgrColumn, IgrGrid, IgrGridToolbar, IgrGridToolbarTitle } from '@infragistics/igniteui-react-grids';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { OrderDto } from '../models/NorthwindSwagger/order-dto';
 import { useGetCustomerDto, useGetOrderDtoList, useGetProductDtoList } from '../hooks/northwind-swagger-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './customer-details.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

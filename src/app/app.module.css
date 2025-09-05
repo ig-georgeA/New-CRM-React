@@ -12,34 +12,13 @@
   display: flex;
 }
 .group {
-  background-color: var(--ig-gray-900);
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  overflow: hidden;
-  position: relative;
-  min-height: 56px;
-}
-.group_1 {
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  position: relative;
-  width: 56px;
-  height: 56px;
-  min-width: 50px;
-  min-height: 50px;
-  max-width: 56px;
-  max-height: 56px;
-}
-.group_2 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   gap: 1rem;
   overflow: hidden;
 }
-.group_3 {
+.group_1 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -47,22 +26,44 @@
   min-height: 50px;
   flex-grow: 1;
 }
-.icon {
-  --size: 24px;
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
+.navbar {
+  color: var(--ig-surface-500);
+  background-color: var(--ig-primary-500);
+  height: max-content;
+  min-width: min-content;
+}
+.nav-drawer {
+  min-width: 240px;
+  min-height: 0;
+  max-width: 240px;
+  flex-shrink: 0;
+}
+.view-container {
+  overflow: auto;
+  position: relative;
+  flex-grow: 1;
+}
+.nav-drawer::part(main) {
+  width: 240px;
+}
+.icon-button::part(base) {
   color: var(--ig-surface-500);
 }
-.image {
-  object-fit: none;
-  width: 413px;
-  height: 14px;
-  min-width: 413px;
-  min-height: 14px;
-  max-width: 413px;
-  max-height: 14px;
-  flex-shrink: 0;
+.icon-button_1::part(base) {
+  color: white;
+}
+.icon-button_2::part(base) {
+  color: white;
+}
+.icon-button_3::part(base) {
+  color: white;
+}
+.icon {
+  color: var(--ig-surface-500);
+}
+.text {
+  height: max-content;
+  min-width: min-content;
 }
 .icon_1 {
   color: white;
@@ -73,29 +74,4 @@
   width: 24px;
   height: 24px;
   color: var(--ig-secondary-400);
-}
-.navbar {
-  color: var(--ig-surface-500);
-  background-color: var(--ig-primary-500);
-  height: max-content;
-  min-width: min-content;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.nav-drawer {
-  min-width: min-content;
-  min-height: 0;
-  max-width: 200px;
-  flex-shrink: 0;
-}
-.view-container {
-  overflow: auto;
-  position: relative;
-  flex-grow: 1;
-}
-.nav-drawer::part(main) {
-  width: 200px;
-}
-.icon-button::part(base) {
-  color: white;
 }
