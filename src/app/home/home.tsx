@@ -259,7 +259,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={classes("column-layout group_8")}>
-                  <div className={classes("row-layout group_5")}>
+                  <div className={classes("row-layout group_12")}>
                     <p className={classes("typography__body-1 content")}>
                       <span>Frequently contacted</span>
                     </p>
@@ -309,7 +309,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={classes("column-layout group_12")}>
+            <div className={classes("column-layout group_3")}>
               <div className={classes("column-layout group_4")}>
                 <div className={classes("row-layout group_5")}>
                   <p className={classes("typography__body-1 content")}>
