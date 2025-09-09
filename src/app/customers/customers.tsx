@@ -192,15 +192,35 @@ export default function Customers() {
                 <p slot="too-short">Entry should be at least 0 character(s) long</p>
                 <p slot="too-long">Entry should be no more than 50 character(s) long</p>
               </IgrInput>
-              <IgrInput label="Contact name" outlined={true} name="contactName"></IgrInput>
-              <IgrInput label="Contact title" outlined={true} name="contactTitle"></IgrInput>
-              <IgrInput label="Street" outlined={true} name="address.street"></IgrInput>
-              <IgrInput label="City" outlined={true} name="address.city"></IgrInput>
+              <IgrInput label="Contact name" outlined={true} minLength={0} maxLength={50} name="contactName">
+                <p slot="too-short">Entry should be at least 0 character(s) long</p>
+                <p slot="too-long">Entry should be no more than 50 character(s) long</p>
+              </IgrInput>
+              <IgrInput label="Contact title" outlined={true} minLength={0} maxLength={50} name="contactTitle">
+                <p slot="too-short">Entry should be at least 0 character(s) long</p>
+                <p slot="too-long">Entry should be no more than 50 character(s) long</p>
+              </IgrInput>
+              <IgrInput label="Street" outlined={true} minLength={0} maxLength={100} name="address.street">
+                <p slot="too-short">Entry should be at least 0 character(s) long</p>
+                <p slot="too-long">Entry should be no more than 100 character(s) long</p>
+              </IgrInput>
+              <IgrInput label="City" outlined={true} minLength={0} maxLength={50} name="address.city">
+                <p slot="too-short">Entry should be at least 0 character(s) long</p>
+                <p slot="too-long">Entry should be no more than 50 character(s) long</p>
+              </IgrInput>
               <div className={classes("row-layout group_2")}>
-                <IgrInput label="Region" outlined={true} name="address.region" className={classes("input")}></IgrInput>
-                <IgrInput label="Postal code" outlined={true} name="address.postalCode" className={classes("input")}></IgrInput>
+                <IgrInput label="Region" outlined={true} minLength={0} maxLength={50} name="address.region" className={classes("input")}>
+                  <p slot="too-short">Entry should be at least 0 character(s) long</p>
+                  <p slot="too-long">Entry should be no more than 50 character(s) long</p>
+                </IgrInput>
+                <IgrInput label="Postal code" outlined={true} minLength={0} maxLength={20} name="address.postalCode" className={classes("input")}>
+                  <p slot="too-short">Entry should be at least 0 character(s) long</p>
+                  <p slot="too-long">Entry should be no more than 20 character(s) long</p>
+                </IgrInput>
               </div>
-              <IgrInput label="Phone" outlined={true} name="address.phone"></IgrInput>
+              <IgrInput label="Phone" outlined={true} pattern="^\+?[0-9][0-9\-]{1,14}$" name="address.phone">
+                <p slot="pattern-mismatch">Entry does not match the required pattern</p>
+              </IgrInput>
             </div>
             <IgrSnackbar actionText="OK" onAction={() => snackbarsuccess?.current?.toggle()} ref={snackbarsuccess}>
               <span>Your new submission was saved successfully!</span>
