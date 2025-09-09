@@ -104,13 +104,14 @@
   position: relative;
 }
 .page-content {
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 16px;
   position: relative;
   flex-grow: 1;
-  flex-basis: 0;
+  flex-shrink: 0;
 }
 .customer-details {
   justify-content: flex-start;
@@ -131,8 +132,7 @@
   gap: 24px;
   position: relative;
   padding: 16px;
-  min-width: 576px;
-  flex-grow: 2;
+  flex-grow: 1;
   flex-basis: 0;
 }
 .tabs {
@@ -143,6 +143,21 @@
 }
 .tab-item {
   min-width: 100%;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  flex-shrink: 0;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
 }
 .buttons-1 {
   flex-wrap: wrap;
@@ -157,7 +172,7 @@
   overflow-y: auto;
   flex-shrink: 0;
 }
-.group_6 {
+.group_8 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -166,7 +181,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_7 {
+.group_9 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -175,7 +190,7 @@
   min-width: 50px;
   flex-shrink: 0;
 }
-.group_8 {
+.group_10 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -184,7 +199,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_9 {
+.group_11 {
   justify-content: flex-start;
   align-items: baseline;
   align-content: flex-start;
@@ -192,7 +207,7 @@
   position: relative;
   min-width: 50px;
 }
-.group_10 {
+.group_12 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -236,9 +251,8 @@
   gap: 24px;
   position: relative;
   padding: 16px;
-  min-width: max-content;
-  flex-grow: 1;
-  flex-basis: 0;
+  min-width: 450px;
+  flex-shrink: 0;
 }
 .tabs_1 {
   min-width: 0;
@@ -246,13 +260,13 @@
   flex-grow: 1;
   flex-basis: 0;
 }
-.group_11 {
+.group_13 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 16px;
   position: relative;
-  padding: 24px 0 0;
+  padding: 16px 0 0;
   min-width: 50px;
   min-height: 50px;
   flex-shrink: 0;
@@ -265,7 +279,7 @@
   gap: 16px;
   position: relative;
 }
-.group_12 {
+.group_14 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -274,7 +288,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_13 {
+.group_15 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
@@ -284,7 +298,7 @@
   min-width: 50px;
   flex-shrink: 0;
 }
-.group_14 {
+.group_16 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -327,6 +341,17 @@
   height: max-content;
   min-width: min-content;
 }
+.text_1 {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.text_2 {
+  color: var(--ig-primary-500);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
 .avatar {
   --ig-size: var(--ig-size-small);
 }
@@ -336,7 +361,7 @@
   min-width: min-content;
   flex-shrink: 0;
 }
-.text_1 {
+.text_3 {
   height: max-content;
   min-width: 140px;
 }
@@ -357,7 +382,7 @@
   height: max-content;
   min-width: min-content;
 }
-.text_2 {
+.text_4 {
   color: var(--ig-gray-600);
   height: max-content;
   min-width: min-content;
@@ -369,7 +394,7 @@
   max-width: 160px;
   flex-shrink: 0;
 }
-.text_3 {
+.text_5 {
   text-align: center;
   color: var(--ig-gray-500);
   height: max-content;
@@ -379,7 +404,7 @@
 .icon_3 {
   color: var(--ig-gray-600);
 }
-.text_4 {
+.text_6 {
   color: var(--ig-gray-800);
   height: max-content;
   min-width: min-content;
@@ -418,8 +443,8 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
-  gap: 24px;
-  padding: 24px 0 0;
+  gap: 32px;
+  padding: 8px 0 0;
   height: 100%;
   min-width: 100%;
   min-height: 50px;
@@ -471,8 +496,7 @@
   --ig-size: var(--ig-size-medium);
   min-width: 600px;
   min-height: 300px;
-  flex-grow: 1;
-  flex-basis: 0;
+  flex-shrink: 0;
 }
 .list {
   height: max-content;

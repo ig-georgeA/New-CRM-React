@@ -138,7 +138,7 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  min-width: 240px;
+  min-width: 300px;
   min-height: 50px;
   max-width: 350px;
   flex-grow: 1;
@@ -206,7 +206,7 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  min-width: 240px;
+  min-width: 300px;
   min-height: 50px;
   max-width: 350px;
   flex-grow: 1;
