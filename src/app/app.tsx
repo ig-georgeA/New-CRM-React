@@ -1,4 +1,4 @@
-import { IgrIconButton, IgrNavbar, IgrNavDrawer, IgrNavDrawerItem, IgrRipple } from 'igniteui-react';
+import { IgrIconButton, IgrNavbar, IgrNavDrawer, IgrNavDrawerItem, IgrRipple } from '@infragistics/igniteui-react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import styles from './app.module.css';
@@ -23,12 +23,10 @@ export default function App() {
             </IgrIconButton>
           </div>
           <div className={classes("row-layout group")}>
-            <p className={classes("typography__subtitle-2 text")}>
+            <h6 className={classes("content")}>
               <span>MyCRM</span>
-            </p>
-            <p className={classes("typography__body-2 text")}>
-              <span>|  CUSTOMER RELATIONSHIP MANAGEMENT</span>
-            </p>
+            </h6>
+            <p className={classes("typography__body-2 content")}></p>
           </div>
           <div style={{ display: 'contents' }} slot="end">
             <IgrIconButton variant="flat" className={classes("icon-button_1")}>

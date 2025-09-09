@@ -1,4 +1,4 @@
-import { IgrAvatar, IgrButton, IgrButtonGroup, IgrCard, IgrCardContent, IgrCardHeader, IgrInput, IgrRipple, IgrSelect, IgrSelectItem, IgrToggleButton } from 'igniteui-react';
+import { IgrAvatar, IgrButton, IgrButtonGroup, IgrCard, IgrCardContent, IgrCardHeader, IgrInput, IgrRipple, IgrSelect, IgrSelectItem, IgrToggleButton } from '@infragistics/igniteui-react';
 import { useState } from 'react';
 import styles from './deals.module.css';
 import createClassTransformer from '../style-utils';

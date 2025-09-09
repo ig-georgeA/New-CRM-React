@@ -1,9 +1,9 @@
-import { IgrAvatar, IgrButton, IgrCard, IgrCardContent, IgrCardHeader, IgrRipple } from 'igniteui-react';
-import { IgrCategoryChart, IgrCategoryChartModule, IgrPieChart, IgrPieChartModule } from 'igniteui-react-charts';
-import { IgrColumn, IgrGrid } from 'igniteui-react-grids';
+import { IgrAvatar, IgrButton, IgrCard, IgrCardContent, IgrCardHeader, IgrRipple } from '@infragistics/igniteui-react';
+import { IgrCategoryChart, IgrCategoryChartModule, IgrPieChart, IgrPieChartModule } from '@infragistics/igniteui-react-charts';
+import { IgrColumn, IgrGrid } from '@infragistics/igniteui-react-grids';
 import { useGetBoxOfficeRevenue, useGetSales } from '../hooks/financial-hooks';
 import { useGetSupportTicketsList } from '../hooks/crmaigenerated-data-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './support.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

@@ -1,5 +1,5 @@
-import { IgrAvatar, IgrButton, IgrCard, IgrCardContent, IgrCardHeader, IgrChip, IgrList, IgrListItem, IgrRipple } from 'igniteui-react';
-import { IgrCategoryChart, IgrCategoryChartModule } from 'igniteui-react-charts';
+import { IgrAvatar, IgrButton, IgrCard, IgrCardContent, IgrCardHeader, IgrChip, IgrList, IgrListItem, IgrRipple } from '@infragistics/igniteui-react';
+import { IgrCategoryChart, IgrCategoryChartModule } from '@infragistics/igniteui-react-charts';
 import { useNavigate } from 'react-router-dom';
 import { useGetCustomerDtoList } from '../hooks/northwind-swagger-hooks';
 import { useGetMeetingsTasksList } from '../hooks/crmapp-hooks';
@@ -259,7 +259,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={classes("column-layout group_8")}>
-                  <div className={classes("row-layout group_5")}>
+                  <div className={classes("row-layout group_12")}>
                     <p className={classes("typography__body-1 content")}>
                       <span>Frequently contacted</span>
                     </p>
@@ -309,7 +309,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={classes("column-layout group_12")}>
+            <div className={classes("column-layout group_3")}>
               <div className={classes("column-layout group_4")}>
                 <div className={classes("row-layout group_5")}>
                   <p className={classes("typography__body-1 content")}>

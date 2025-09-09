@@ -33,7 +33,7 @@
   min-width: min-content;
 }
 .nav-drawer {
-  min-width: 240px;
+  min-width: min-content;
   min-height: 0;
   max-width: 240px;
   flex-shrink: 0;
@@ -61,7 +61,7 @@
 .icon {
   color: var(--ig-surface-500);
 }
-.text {
+.content {
   height: max-content;
   min-width: min-content;
 }
